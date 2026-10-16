@@ -1,0 +1,363 @@
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f8fa;
+    color: #24292f;
+}
+
+/* Navigation */
+nav {
+    height: 200px;
+    background: #24292f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.logo {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.nav-links a:hover {
+    color: #58a6ff;
+}
+
+/* Common Styles */
+.hero, .profile-hero, .database-page h1 {
+    background: linear-gradient(135deg, #24292f, #0969da);
+    color: white;
+    text-align: center;
+}
+
+.hero, .profile-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1, .profile-hero h1 {
+    font-size: 80px;
+}
+
+.card, .search-box, #profile,
+.database-container, .developer-record {
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.card a, .search-box button,
+.github-button, .database-buttons button {
+    background: #0969da;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Home Hero */
+.hero {
+    height: 350px;
+}
+
+.hero h1, .hero p {
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 40px;
+}
+
+.hero button {
+    padding: 24px 45px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #0969da;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Developers */
+.developers-section {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.developers-section h2, .search-box h2 {
+    font-size: 60px;
+    margin-bottom: 55px;
+}
+
+#developers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 250px;
+    height: 350px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.card h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 8px 0;
+    font-size: 25px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Search */
+.search-box {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto 100px;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.search-box p {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.search-box button {
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #24292f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 180px;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 50px;
+}
+
+/* Profile Page */
+.profile-hero {
+    height: 560px;
+    font-size: 40px;
+}
+
+.profile-container {
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#profile {
+    width: 700px;
+    height: 1000px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 226px;
+    height: 226px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+#profile h2 {
+    font-size: 60px;
+}
+
+.profile-info {
+    text-align: left;
+    line-height: 2;
+    font-size: 30px;
+}
+
+.github-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 22px 35px;
+    border-radius: 55px;
+    font-size: 30px;
+}
+
+/* Database Page */
+.database-page {
+    background: #f6f8fa;
+    text-align: center;
+}
+
+.database-page h1 {
+    padding: 50px 20px;
+    font-size: 45px;
+}
+
+.database-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.database-container input {
+    width: 85%;
+    padding: 15px;
+    margin: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.database-buttons {
+    margin-top: 20px;
+}
+
+.database-buttons button {
+    padding: 12px 25px;
+    margin: 8px;
+    border-radius: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.database-buttons button:hover {
+    background: #074ea6;
+}
+
+.database-page h2 {
+    display: none;
+    font-size: 50px;
+    margin: 40px 0 20px;
+}
+
+#developerList {
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto 50px;
+}
+
+.developer-record {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo, .hero h1, .profile-hero h1 {
+        font-size: 36px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .hero p, .profile-hero {
+        font-size: 22px;
+    }
+
+    .developers-section h2, .search-box h2 {
+        font-size: 30px;
+    }
+
+    .card img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .card h3, .card a {
+        font-size: 22px;
+    }
+
+    .search-box, .database-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    #profile {
+        width: 100%;
+        height: auto;
+    }
+
+    .database-container input,
+    .database-buttons button,
+    .developer-record {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+}
